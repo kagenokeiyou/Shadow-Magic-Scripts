@@ -85,7 +85,7 @@
                 video.currentTime += 5;
                 showTip('快进5秒');
             }
-        } else if (event.code === 'ArrowRight') {
+        } else if (event.code === 'ArrowLeft') {
             event.preventDefault();
             event.stopPropagation();
             if (event.repeat) return;
