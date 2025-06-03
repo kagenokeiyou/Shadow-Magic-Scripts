@@ -67,14 +67,16 @@
                 isSpeedup = true;
                 showTip('2倍速播放', true);
             }, 500);
-        };
+        } else if (event.code === 'ArrowLeft') {
+            event.preventDefault();
+            event.stopPropagation();
+        }
     }, true);
 
     window.addEventListener('keyup', event => {
         if (event.code === 'ArrowRight') {
             event.preventDefault();
             event.stopPropagation();
-            if (event.repeat) return;
 
             if (isSpeedup) {
                 video.playbackRate = 1.0;
@@ -88,11 +90,10 @@
         } else if (event.code === 'ArrowLeft') {
             event.preventDefault();
             event.stopPropagation();
-            if (event.repeat) return;
 
             video.currentTime += 5;
             showTip('后退5秒');
-        };
+        }
     }, true);
 
 })();
