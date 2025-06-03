@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         VideoControl
-// @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @namespace    https://greasyfork.org/zh-CN/users/1478188-kagenokeiyou
+// @license      MIT
+// @version      1.0.2
 // @description  Control video playback with keyboard shortcuts
 // @author       kagenokeiyou
 // @match        https://www.youtube.com/*
