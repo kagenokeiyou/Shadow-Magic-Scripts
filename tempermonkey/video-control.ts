@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         VideoControl
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Control video playback with keyboard shortcuts
 // @author       kagenokeiyou
-// @match        https://www.youtube.com/watch?v=*
+// @match        https://www.youtube.com/*
 // @match        https://player.cycanime.com/*
 // @grant        none
 // ==/UserScript==
