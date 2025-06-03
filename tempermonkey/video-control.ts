@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  Control video playback with keyboard shortcuts
 // @author       kagenokeiyou
+// @match        https://www.youtube.com/watch?v=*
 // @match        https://player.cycanime.com/*
 // @grant        none
 // ==/UserScript==
@@ -36,6 +37,8 @@
         if (getComputedStyle(video.parentElement).position === 'static') {
             video.parentElement.style.position = 'relative'
         }
+        video.parentElement.style.width = '100%';
+        video.parentElement.style.height = '100%';
         video.parentElement.appendChild(tip);
     }
 
