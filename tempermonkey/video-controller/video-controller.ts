@@ -94,7 +94,7 @@
         else if (event.code === 'ArrowLeft') {
             event.preventDefault();
             event.stopPropagation();
-            video.currentTime += 5;
+            video.currentTime -= 5;
             showTip('后退5秒');
         }
     }, true);
